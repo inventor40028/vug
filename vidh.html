@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+VUG WORLD...
+        </title>
+        <style>
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: bold;
+    font-size: 50px;
+    color: yellow;
+}
+
+body {
+    background-color: black;
+    color: yellow;
+    text-align: center;
+    margin: 0;
+    font-family: 'Bebas Neue', cursive;
+ 
+}
+button{
+    background:    #ebbe14;
+background:    linear-gradient(#0b0b0b, #ebbe14 50%, #0b0b0b);
+border:        1px solid #000000;
+border-radius: 17px;
+width:         196px;
+height:        50px;
+color:         #000000;
+display:       inline-block;
+font:          italic bold 30px/50px "Roboto", sans-serif;
+text-align:    center;
+text-shadow:   3px 2px #d9d907;
+}
+button:hover{
+  background:    #000000;
+background:    linear-gradient(#fbff00, #000000 50%, #ffe600);
+border:        1px solid #000000;
+border-radius: 17px;
+width:         200px;
+height:        auto;
+color:         #eeff00;
+display:       inline-block;
+font:          italic bold 30px/50px "Roboto", sans-serif;
+text-align:    center;
+text-shadow:   3px 2px #000000;
+box-shadow: 0 0 15px rgba(255, 255, 0, 1); /* Brighter glow on hover */
+transform: scale(1.05); /* Slight zoom effect */
+}
+.video
+    {
+    width: 320px;
+    height: auto;
+    display: block;
+    margin: auto;
+    border: 2px solid yellow; /* Border color */
+    border-radius: 2px; /* Rounded corners */
+    box-shadow: 0 0 7px rgba(255, 255, 0, 0.7); /* Glowing effect */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+}
+.video:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 0 25px rgba(255, 255, 0, 1); /* Brighter glow on hover */
+}
+
+h1{
+  font:"Luckiest Guy", sans-serif;
+}
+.video-container {
+            display: inline-block;
+            position: relative;
+            margin: 10px;
+        }
+        
+
+.emoji {
+            position: absolute;
+            font-size: 15px;
+            pointer-events: none;
+            opacity: 1;
+            animation: burst 1s ease-out forwards;
+        }
+
+        @keyframes burst {
+            0% {
+                opacity: 1;
+                transform: scale(1) translate(0, 0);
+            }
+            100% {
+                opacity: 0;
+                transform: scale(0.5) translate(var(--x), var(--y));
+            }
+        }
+</style>
+    </head>
+    <body>
+      <script>
+ 
+
+        document.addEventListener("click", function(event) {
+            let emojis = ["🍑", "🍆", "🔞", "🥵"];
+            let numPerEmoji = 5; // 5 of each emoji
+            let totalEmojis = emojis.length * numPerEmoji; // 20 emojis per click
+    
+            for (let i = 0; i < totalEmojis; i++) {
+                let emoji = document.createElement("div");
+                emoji.textContent = emojis[i % emojis.length]; // Cycle through emojis
+                emoji.classList.add("emoji");
+    
+                // Random movement
+                let angle = Math.random() * 2 * Math.PI; 
+                let distance = Math.random() * 120 + 30; // Random spread distance
+                let x = Math.cos(angle) * distance + "px";
+                let y = Math.sin(angle) * distance + "px";
+    
+                emoji.style.setProperty("--x", x);
+                emoji.style.setProperty("--y", y);
+    
+                // Set position at click location
+                emoji.style.left = `${event.clientX}px`;
+                emoji.style.top = `${event.clientY}px`;
+    
+                document.body.appendChild(emoji);
+    
+                setTimeout(() => {
+                    emoji.remove();
+                }, 1000);
+            }
+        });
+    </script>
+        <center>
+       <h1>VUG FULL HENTAI VIDEO</h1>
+
+
+          <div class="video-container">
+          <iframe alt="new videos will be in very soon"class="video"src="" width="700px" height="600px" frameborder="0" allowfullscreen scrolling="no"></iframe>
+         end of the line
+          <p>
+           <a href=""><button>FULL VIDEO</button></a> 
+          </p>
+          </div>
+
+
+         
+
+        </center>
+
+    </body>
+</html>

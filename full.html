@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+VUG WORLD...
+        </title>
+        <style>
+            .emoji {
+            position: absolute;
+            font-size: 15px;
+            pointer-events: none;
+            opacity: 1;
+            animation: burst 1s ease-out forwards;
+        }
+
+        @keyframes burst {
+            0% {
+                opacity: 1;
+                transform: scale(1) translate(0, 0);
+            }
+            100% {
+                opacity: 0;
+                transform: scale(0.5) translate(var(--x), var(--y));
+            }
+        }
+body {
+    background-color: black;
+    color: yellow;
+    text-align: center;
+    margin: 0;
+ 
+}
+button{
+    background:    #ebbe14;
+background:    linear-gradient(#0b0b0b, #ebbe14 50%, #0b0b0b);
+border:        1px solid #000000;
+border-radius: 17px;
+width:         190px;
+height:        auto;
+color:         #000000;
+display:       inline-block;
+font:          italic bold 30px/50px "Roboto", sans-serif;
+text-align:    center;
+text-shadow:   3px 2px #d9d907;
+}
+button:hover{
+  background:    #000000;
+background:    linear-gradient(#fbff00, #000000 50%, #ffe600);
+border:        1px solid #000000;
+border-radius: 17px;
+width:         200px;
+height:        auto;
+color:         #eeff00;
+display:       inline-block;
+font:          italic bold 30px/50px "Roboto", sans-serif;
+text-align:    center;
+text-shadow:   3px 2px #000000;
+box-shadow: 0 0 15px rgba(255, 255, 0, 1); /* Brighter glow on hover */
+transform: scale(1.05); /* Slight zoom effect */
+}
+
+
+.vugicon {
+    position: fixed;
+    top: 0;
+            right: 0;
+    
+    width: 30px;
+    height: 30px;
+    background-color: #4CAF50; /* Green */
+    border-radius: 50%;
+    display: flex;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    top: 15px; 
+    right: 15px;
+    z-index: 9999;
+}
+@media (max-width: 600px) {
+            .vugicon {
+                width: 30px;
+                height: 30px;
+            }
+
+            .vugicon img {
+                width: 30px;
+            }
+
+}
+.apk-button {
+    position: fixed;
+    top: 0;
+            left: 0;
+    
+    width: 30px;
+    height: 30px;
+    background-color: #4CAF50; /* Green */
+    border-radius: 50%;
+    display: flex;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    top: 15px; 
+    left: 15px;
+    z-index: 9999;
+}
+
+.apk-button img {
+    width: 35px; /* Adjust based on the APK symbol size */
+    height: auto;
+}
+@media (max-width: 600px) {
+            .apk-button {
+                width: 30px;
+                height: 30px;
+            }
+
+            .apk-button img {
+                width: 30px;
+            }
+}
+        </style>
+    </head>
+    <body>
+        <script>
+ 
+
+            document.addEventListener("click", function(event) {
+                let emojis = ["🍑", "🍆", "🔞", "🥵"];
+                let numPerEmoji = 5; // 5 of each emoji
+                let totalEmojis = emojis.length * numPerEmoji; // 20 emojis per click
+        
+                for (let i = 0; i < totalEmojis; i++) {
+                    let emoji = document.createElement("div");
+                    emoji.textContent = emojis[i % emojis.length]; // Cycle through emojis
+                    emoji.classList.add("emoji");
+        
+                    // Random movement
+                    let angle = Math.random() * 2 * Math.PI; 
+                    let distance = Math.random() * 120 + 30; // Random spread distance
+                    let x = Math.cos(angle) * distance + "px";
+                    let y = Math.sin(angle) * distance + "px";
+        
+                    emoji.style.setProperty("--x", x);
+                    emoji.style.setProperty("--y", y);
+        
+                    // Set position at click location
+                    emoji.style.left = `${event.clientX}px`;
+                    emoji.style.top = `${event.clientY}px`;
+        
+                    document.body.appendChild(emoji);
+        
+                    setTimeout(() => {
+                        emoji.remove();
+                    }, 1000);
+                }
+            });
+        </script>
+        <center>
+            <body>
+                <div id="google_translate_element"></div>
+            
+                <script>
+                    function googleTranslateElementInit() {
+                        new google.translate.TranslateElement({pageLanguage: 'en', autoDisplay: false}, 'google_translate_element');
+                    }
+                </script>
+                <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            
+            <h1>SELECT YOUR CATEGORY</h1>
+            
+
+            <P>
+                <a href="vidh.html"> <button>HENTAI🔞📽️</button> </a>
+              </P>
+
+            <p>
+                
+            <P>
+                <a href="vidp.html"> <button>STRAIGHT PORN🔞📽️</button> </a>
+              </P>
+
+            <p>
+                
+            <P>
+                <a href="vidg.html"> <button>GAY PORN🔞📽️</button> </a>
+              </P>
+
+            <p>
+            
+           
+             
+<a href="https://www.appcreator24.com/app3513440-1vxpcu"><button>APP</button></a>
+        </center>
+
+    </body>
+</html>
