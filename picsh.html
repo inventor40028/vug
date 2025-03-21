@@ -19,14 +19,14 @@
             }
         }
 img {
- width: 320px;
-    height: auto;
+    width: 100%; /* Make image fill the container */
+    height: auto; /* Maintain aspect ratio */
     display: block;
-    margin: auto;
     border: 1px solid yellow; /* Border color */
     border-radius: 1px; /* Rounded corners */
     box-shadow: 0 0 3px rgba(255, 255, 0, 0.7); /* Glowing effect */
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
 }
 img:hover {
     transform: scale(1.05); /* Slight zoom effect */
@@ -67,11 +67,9 @@ box-shadow: 0 0 15px rgba(255, 255, 0, 1); /* Brighter glow on hover */
 transform: scale(1.05); /* Slight zoom effect */
 }
 .video-container {
-    border: 1px solid yellow; /* Thin yellow border */
-    width: 360px; /* Fixed width */
-    height: auto;
-    display: inline-block; /* Adjusts height automatically */
-    padding: 0px; /* Adds some space inside */
+    width: 100%; /* Ensure container takes full width */
+    max-width: 360px; /* Prevent it from getting too big */
+    margin: auto; /* Center it */
 }
     </style>
 <title>Pics 🔞📸</title>
