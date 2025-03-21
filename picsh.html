@@ -18,12 +18,12 @@
                 transform: scale(0.5) translate(var(--x), var(--y));
             }
         }
-img {
 
-    width: 320px;
-    height: auto; /* Keeps the image proportional */
+img {
+    width: 100%; /* Makes it responsive */
+    max-width: 320px; /* Prevents it from getting too large */
+    height: auto; /* Keeps aspect ratio */
     display: block;
-    max-width: 100%; /* Prevents overflow */
     margin: auto;
     border: 1px solid yellow; /* Border color */
     border-radius: 1px; /* Rounded corners */
