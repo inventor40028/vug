@@ -19,6 +19,24 @@
         td {
             padding: 10px;
         }
+        .emoji {
+            position: absolute;
+            font-size: 15px;
+            pointer-events: none;
+            opacity: 1;
+            animation: burst 1s ease-out forwards;
+        }
+
+        @keyframes burst {
+            0% {
+                opacity: 1;
+                transform: scale(1) translate(0, 0);
+            }
+            100% {
+                opacity: 0;
+                transform: scale(0.5) translate(var(--x), var(--y));
+            }
+        }
         img {
             width: 100%;
             max-width: 300px;
@@ -70,35 +88,72 @@ td {
 </head>
 <body>
     <script>
-        // Function to detect device type and load the appropriate ad script
-        function loadAd() {
-            var screenWidth = window.innerWidth;
+ 
+
+        document.addEventListener("click", function(event) {
+            let emojis = ["🍑", "🍆", "🔞", "🥵"];
+            let numPerEmoji = 5; // 5 of each emoji
+            let totalEmojis = emojis.length * numPerEmoji; // 20 emojis per click
     
-            if (screenWidth >= 1024) {
-                // Laptop Ad
-                var script1 = document.createElement("script");
-                script1.type = "text/javascript";
-                script1.innerHTML = `
-                    atOptions = {
-                        'key' : '51b8bab4210a24dc620eff5238bf5a5b',
-                        'format' : 'iframe',
-                        'height' : 90,
-                        'width' : 728,
-                        'params' : {}
-                    };
-                `;
+            for (let i = 0; i < totalEmojis; i++) {
+                let emoji = document.createElement("div");
+                emoji.textContent = emojis[i % emojis.length]; // Cycle through emojis
+                emoji.classList.add("emoji");
     
-                var script2 = document.createElement("script");
-                script2.type = "text/javascript";
-                script2.src = "//www.highperformanceformat.com/51b8bab4210a24dc620eff5238bf5a5b/invoke.js";
+                // Random movement
+                let angle = Math.random() * 2 * Math.PI; 
+                let distance = Math.random() * 120 + 30; // Random spread distance
+                let x = Math.cos(angle) * distance + "px";
+                let y = Math.sin(angle) * distance + "px";
     
-                document.body.appendChild(script1);
-                document.body.appendChild(script2);
-            } else {
-                // Mobile Ad
-                var script3 = document.createElement("script");
-                script3.type = "text/javascript";
-                script3.innerHTML = `
+                emoji.style.setProperty("--x", x);
+                emoji.style.setProperty("--y", y);
+    
+                // Set position at click location
+                emoji.style.left = `${event.clientX}px`;
+                emoji.style.top = `${event.clientY}px`;
+    
+                document.body.appendChild(emoji);
+    
+                setTimeout(() => {
+                    emoji.remove();
+                }, 1000);
+            }
+        });
+    
+      
+    function showCorrectAd() {
+        var screenWidth = window.innerWidth;
+
+        if (screenWidth >= 1024) {
+            document.getElementById("laptopAd").style.display = "block"; // Show laptop ad
+        } else {
+            document.getElementById("mobileAd").style.display = "block"; // Show mobile ad
+        }
+    }
+
+    window.onload = showCorrectAd;
+</script>
+    <h2>WELCOME TO THE WORLD OF INFINITE</h2>
+    <table>
+        <tr>
+            <td colspan="2">
+                <div id="laptopAd" style="display: none;">
+                    <script type="text/javascript">
+                        atOptions = {
+                            'key' : '51b8bab4210a24dc620eff5238bf5a5b',
+                            'format' : 'iframe',
+                            'height' : 90,
+                            'width' : 728,
+                            'params' : {}
+                        };
+                    </script>
+                    <script type="text/javascript" src="//www.highperformanceformat.com/51b8bab4210a24dc620eff5238bf5a5b/invoke.js"></script>
+                </div></td></p>
+        </tr>
+        <td colspan="2">
+            <div id="mobileAd" style="display: none;">
+                <script type="text/javascript">
                     atOptions = {
                         'key' : '108fa94244896e77f92dc761e38f8e39',
                         'format' : 'iframe',
@@ -106,49 +161,9 @@ td {
                         'width' : 320,
                         'params' : {}
                     };
-                `;
-    
-                var script4 = document.createElement("script");
-                script4.type = "text/javascript";
-                script4.src = "//www.highperformanceformat.com/108fa94244896e77f92dc761e38f8e39/invoke.js";
-    
-                document.body.appendChild(script3);
-                document.body.appendChild(script4);
-            }
-        }
-    
-        // Run the function after the page loads
-        window.onload = loadAd;
-    </script>
-    
-    <h2>WELCOME TO THE WORLD OF INFINITE</h2>
-    <table>
-        <tr>
-            <td colspan="2">
-                <script type="text/javascript">
-                    atOptions = {
-                        'key' : '51b8bab4210a24dc620eff5238bf5a5b',
-                        'format' : 'iframe',
-                        'height' : 90,
-                        'width' : 728,
-                        'params' : {}
-                    };
                 </script>
-                <script type="text/javascript" src="//www.highperformanceformat.com/51b8bab4210a24dc620eff5238bf5a5b/invoke.js"></script>
-            </td></p>
-        </tr>
-        <td colspan="2">
-            <script type="text/javascript">
-                atOptions = {
-                    'key' : '108fa94244896e77f92dc761e38f8e39',
-                    'format' : 'iframe',
-                    'height' : 50,
-                    'width' : 320,
-                    'params' : {}
-                };
-            </script>
-            <script type="text/javascript" src="//www.highperformanceformat.com/108fa94244896e77f92dc761e38f8e39/invoke.js"></script>
-        </td></p>
+                <script type="text/javascript" src="//www.highperformanceformat.com/108fa94244896e77f92dc761e38f8e39/invoke.js"></script>
+            </div>   </td></p>
     </tr>
         <tr>
             <div class="imageb">
@@ -166,35 +181,33 @@ td {
         </div></tr>
         <tr>
             <td colspan="2">
-                <a href="https://terabox.com/s/1Ly0lccFZwBP8GtjG7Kz0rw"><button> ARTS - 96 ITEMS</button></a>
-            </td></p>
+                <div id="laptopAd" style="display: none;">
+                    <script type="text/javascript">
+                        atOptions = {
+                            'key' : '51b8bab4210a24dc620eff5238bf5a5b',
+                            'format' : 'iframe',
+                            'height' : 90,
+                            'width' : 728,
+                            'params' : {}
+                        };
+                    </script>
+                    <script type="text/javascript" src="//www.highperformanceformat.com/51b8bab4210a24dc620eff5238bf5a5b/invoke.js"></script>
+                </div></td></p>
         </tr>
-        <tr>
-            <td colspan="2">
+        <td colspan="2">
+            <div id="mobileAd" style="display: none;">
                 <script type="text/javascript">
                     atOptions = {
-                        'key' : '51b8bab4210a24dc620eff5238bf5a5b',
+                        'key' : '108fa94244896e77f92dc761e38f8e39',
                         'format' : 'iframe',
-                        'height' : 90,
-                        'width' : 728,
+                        'height' : 50,
+                        'width' : 320,
                         'params' : {}
                     };
                 </script>
-                <script type="text/javascript" src="//www.highperformanceformat.com/51b8bab4210a24dc620eff5238bf5a5b/invoke.js"></script>
-            </td></p>
-        </tr>
-        <td colspan="2">
-            <script type="text/javascript">
-                atOptions = {
-                    'key' : '108fa94244896e77f92dc761e38f8e39',
-                    'format' : 'iframe',
-                    'height' : 50,
-                    'width' : 320,
-                    'params' : {}
-                };
-            </script>
-            <script type="text/javascript" src="//www.highperformanceformat.com/108fa94244896e77f92dc761e38f8e39/invoke.js"></script>
-        </td></p>
+                <script type="text/javascript" src="//www.highperformanceformat.com/108fa94244896e77f92dc761e38f8e39/invoke.js"></script>
+            </div>   </td></p>
+    </tr>
     </tr>
         <tr>
             <div class="imageb">
@@ -219,30 +232,32 @@ td {
         </tr>
         <tr>
             <td colspan="2">
+                <div id="laptopAd" style="display: none;">
+                    <script type="text/javascript">
+                        atOptions = {
+                            'key' : '51b8bab4210a24dc620eff5238bf5a5b',
+                            'format' : 'iframe',
+                            'height' : 90,
+                            'width' : 728,
+                            'params' : {}
+                        };
+                    </script>
+                    <script type="text/javascript" src="//www.highperformanceformat.com/51b8bab4210a24dc620eff5238bf5a5b/invoke.js"></script>
+                </div></td></p>
+        </tr>
+        <td colspan="2">
+            <div id="mobileAd" style="display: none;">
                 <script type="text/javascript">
                     atOptions = {
-                        'key' : '51b8bab4210a24dc620eff5238bf5a5b',
+                        'key' : '108fa94244896e77f92dc761e38f8e39',
                         'format' : 'iframe',
-                        'height' : 90,
-                        'width' : 728,
+                        'height' : 50,
+                        'width' : 320,
                         'params' : {}
                     };
                 </script>
-                <script type="text/javascript" src="//www.highperformanceformat.com/51b8bab4210a24dc620eff5238bf5a5b/invoke.js"></script>
-            </td></p>
-        </tr>
-        <td colspan="2">
-            <script type="text/javascript">
-                atOptions = {
-                    'key' : '108fa94244896e77f92dc761e38f8e39',
-                    'format' : 'iframe',
-                    'height' : 50,
-                    'width' : 320,
-                    'params' : {}
-                };
-            </script>
-            <script type="text/javascript" src="//www.highperformanceformat.com/108fa94244896e77f92dc761e38f8e39/invoke.js"></script>
-        </td></p>
+                <script type="text/javascript" src="//www.highperformanceformat.com/108fa94244896e77f92dc761e38f8e39/invoke.js"></script>
+            </div>   </td></p>
     </tr>
     </table>
 </body>
