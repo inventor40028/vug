@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-<head> <style>
-.emoji {
-            position: absolute;
-            font-size: 15px;<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -73,6 +69,58 @@ td {
     </style>
 </head>
 <body>
+    <script>
+        // Function to detect device type and load the appropriate ad script
+        function loadAd() {
+            var screenWidth = window.innerWidth;
+    
+            if (screenWidth >= 1024) {
+                // Laptop Ad
+                var script1 = document.createElement("script");
+                script1.type = "text/javascript";
+                script1.innerHTML = `
+                    atOptions = {
+                        'key' : '51b8bab4210a24dc620eff5238bf5a5b',
+                        'format' : 'iframe',
+                        'height' : 90,
+                        'width' : 728,
+                        'params' : {}
+                    };
+                `;
+    
+                var script2 = document.createElement("script");
+                script2.type = "text/javascript";
+                script2.src = "//www.highperformanceformat.com/51b8bab4210a24dc620eff5238bf5a5b/invoke.js";
+    
+                document.body.appendChild(script1);
+                document.body.appendChild(script2);
+            } else {
+                // Mobile Ad
+                var script3 = document.createElement("script");
+                script3.type = "text/javascript";
+                script3.innerHTML = `
+                    atOptions = {
+                        'key' : '108fa94244896e77f92dc761e38f8e39',
+                        'format' : 'iframe',
+                        'height' : 50,
+                        'width' : 320,
+                        'params' : {}
+                    };
+                `;
+    
+                var script4 = document.createElement("script");
+                script4.type = "text/javascript";
+                script4.src = "//www.highperformanceformat.com/108fa94244896e77f92dc761e38f8e39/invoke.js";
+    
+                document.body.appendChild(script3);
+                document.body.appendChild(script4);
+            }
+        }
+    
+        // Run the function after the page loads
+        window.onload = loadAd;
+    </script>
+    
     <h2>WELCOME TO THE WORLD OF INFINITE</h2>
     <table>
         <tr>
@@ -121,156 +169,5 @@ td {
             </td></p>
         </tr>
     </table>
-</body>
-</html>
-
-            pointer-events: none;
-            opacity: 1;
-            animation: burst 1s ease-out forwards;
-        }
-
-        @keyframes burst {
-            0% {
-                opacity: 1;
-                transform: scale(1) translate(0, 0);
-            }
-            100% {
-                opacity: 0;
-                transform: scale(0.5) translate(var(--x), var(--y));
-            }
-        }
-img {
-    width: 100%; /* Make image fill the container */
-    height: auto; /* Maintain aspect ratio */
-             max-width: 345px; 
-    display: block;
-    border: 1px solid yellow; /* Border color */
-    border-radius: 1px; /* Rounded corners */
-    box-shadow: 0 0 3px rgba(255, 255, 0, 0.7); /* Glowing effect */
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-
-}
-img:hover {
-    transform: scale(1.05); /* Slight zoom effect */
-    box-shadow: 0 0 15px rgba(255, 255, 0, 1); /* Brighter glow on hover */
-}
-
-        body {
-            background-color: black;
-           color:#d9d907;
-
-        }
-        button{
-    background:    #ebbe14;
-background:    linear-gradient(#0b0b0b, #ebbe14 50%, #0b0b0b);
-border:        1px solid #fbff00;
-border-radius: 17px;
-width:         196px;
-height:        auto;
-color:         #000000;
-display:       inline-block;
-font:          italic bold 30px/50px "Roboto", sans-serif;
-text-align:    center;
-text-shadow:   3px 2px #d9d907;
-}
-button:hover{
-  background:    #000000;
-background:    linear-gradient(#fbff00, #000000 50%, #ffe600);
-border:        1px solid #000000;
-border-radius: 17px;
-width:         200px;
-height:        60px;
-color:         #eeff00;
-display:       inline-block;
-font:          italic bold 30px/50px "Roboto", sans-serif;
-text-align:    center;
-text-shadow:   3px 2px #000000;
-box-shadow: 0 0 15px rgba(255, 255, 0, 1); /* Brighter glow on hover */
-transform: scale(1.05); /* Slight zoom effect */
-}
-.video-container {
-    width: 100%; /* Ensure container takes full width */
-    max-width: 360px; /* Prevent it from getting too big */
-    margin: auto; /* Center it */
-}
-    </style>
-<title>Pics 🔞📸</title>
-</head>
-
-<body>
-
-<script>
- 
-
-        document.addEventListener("click", function(event) {
-            let emojis = ["🍑", "🍆", "🔞", "🥵"];
-            let numPerEmoji = 5; // 5 of each emoji
-            let totalEmojis = emojis.length * numPerEmoji; // 20 emojis per click
-    
-            for (let i = 0; i < totalEmojis; i++) {
-                let emoji = document.createElement("div");
-                emoji.textContent = emojis[i % emojis.length]; // Cycle through emojis
-                emoji.classList.add("emoji");
-    
-                // Random movement
-                let angle = Math.random() * 2 * Math.PI; 
-                let distance = Math.random() * 120 + 30; // Random spread distance
-                let x = Math.cos(angle) * distance + "px";
-                let y = Math.sin(angle) * distance + "px";
-    
-                emoji.style.setProperty("--x", x);
-                emoji.style.setProperty("--y", y);
-    
-                // Set position at click location
-                emoji.style.left = `${event.clientX}px`;
-                emoji.style.top = `${event.clientY}px`;
-    
-                document.body.appendChild(emoji);
-    
-                setTimeout(() => {
-                    emoji.remove();
-                }, 1000);
-            }
-        });
-    </script>
-    <center>
-
-<p></p>
-<div class="separator" style="clear: both; text-align: center;">
-  <div class="separator" style="clear: both; text-align: center;">
-    <div class="separator" style="clear: both; text-align: center;">
-      <div class="separator" style="clear: both; text-align: center;">
-        <div class="separator" style="clear: both; text-align: center;">
-          <div class="separator" style="clear: both;">
-            <div class="separator" style="clear: both;">
-              <span style="color: #fcff01; font-family: arial;"><b>WELCOME TO THE WORLD OF INFINITE </b></span>
-            </div>
-            <div class="separator" style="clear: both;">
-              <p>
- <div class="video-container">             
-<img src="hpic/h1 (1).jpg" alt="hentai pic"><br>
-<img src="hpic/h1 (2).jpg" alt="hentai pic"><br>
-<p>👇👇MORE PICS HERE👇👇</p>
-<a href="https://terabox.com/s/10lPCHKMD45Yzi-xyYlADdQ"><button>MORE ARTS 100 ITEMS</button></a><p>
-    </div></p>
-    <p>
-<div class="video-container">
-<img src="hpic/h1 (3).jpg" alt="hentai pic"><br>
-<img src="hpic/h1 (4).jpg" alt="hentai pic"><br>
-<a href="https://terabox.com/s/1Ly0lccFZwBP8GtjG7Kz0rw"><button>MORE ARTS 96 ITEMS</button></a><p></p>
-</p>
-</div></p>
-<p>
-</div>
-<div class="video-container">
-<img src="hpic/h1 (5).jpg" alt="hentai pic"><br>
-<img src="hpic/h1 (6).jpg" alt="hentai pic"><br>
-<a href="https://terabox.com/s/1OdqC_BW4cCGGyQHuUVsidA"><button>MORE ARTS 50 ITEMS</button></a><p></p>
-</p>
-</div></p>
-
-            </center>
-<p></p>
-
 </body>
 </html>
