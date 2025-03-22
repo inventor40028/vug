@@ -2,7 +2,128 @@
 <head> <style>
 .emoji {
             position: absolute;
-            font-size: 15px;
+            font-size: 15px;<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Table Layout</title>
+    <style>
+        body {
+            background-color: black;
+            color: yellow;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 80%;
+            margin: auto;
+            border-collapse: collapse;
+        }
+        td {
+            padding: 10px;
+        }
+        img {
+            width: 100%;
+            max-width: 300px;
+            display: block;
+            margin: auto;
+            border-radius: 10px;
+        }
+        button{
+    background:    #ebbe14;
+background:    linear-gradient(#0b0b0b, #ebbe14 50%, #0b0b0b);
+border:        1px solid #fbff00;
+border-radius: 17px;
+width:         196px;
+height:        auto;
+color:         #000000;
+display:       inline-block;
+font:          italic bold 30px/50px "Roboto", sans-serif;
+text-align:    center;
+text-shadow:   3px 2px #d9d907;
+}
+button:hover{
+  background:    #000000;
+background:    linear-gradient(#fbff00, #000000 50%, #ffe600);
+border:        1px solid #000000;
+border-radius: 17px;
+width:         200px;
+height:        auto;
+color:         #eeff00;
+display:       inline-block;
+font:          italic bold 30px/50px "Roboto", sans-serif;
+text-align:    center;
+text-shadow:   3px 2px #000000;
+box-shadow: 0 0 15px rgba(255, 255, 0, 1); /* Brighter glow on hover */
+transform: scale(1.05); /* Slight zoom effect */
+}
+.imageb{
+    border: 2px yellow;
+    height: auto;
+    width: 330px;
+    display: inline-block; /* Adjusts height automatically */
+    padding: 0px; /* Adds some space inside */
+}
+td {
+    border: 3px solid yellow;
+    border-collapse: collapse;
+}
+
+    </style>
+</head>
+<body>
+    <h2>WELCOME TO THE WORLD OF INFINITE</h2>
+    <table>
+        <tr>
+            <div class="imageb">
+            <td><img src="hpic/h1 (1).jpg" alt="Image 1"></td>
+            <td><img src="hpic/h1 (2).jpg" alt="Image 2"></td>
+        </div></tr>
+        <td colspan="2">
+            <a href="https://terabox.com/s/10lPCHKMD45Yzi-xyYlADdQ"><button> ARTS - 100 ITEMS</button></a>
+        </td>
+        <p>
+        <tr>
+            <div class="imageb">
+            <td><img src="hpic/h1 (3).jpg" alt="Image 3"></td>
+            <td><img src="hpic/h1 (4).jpg" alt="Image 4"></td>
+        </div></tr>
+        <tr>
+            <td colspan="2">
+                <a href="https://terabox.com/s/1Ly0lccFZwBP8GtjG7Kz0rw"><button> ARTS - 96 ITEMS</button></a>
+            </td></p>
+        </tr>
+        <tr>
+            <td colspan="2">
+              
+            </td></p>
+        </tr>
+        <tr>
+            <div class="imageb">
+            <td><img src="hpic/h1 (5).jpg" alt="Image 3"></td>
+            <td><img src="hpic/h1 (6).jpg" alt="Image 4"></td>
+        </div></tr>
+        <tr>
+            <td colspan="2">
+                <a href="https://terabox.com/s/1OdqC_BW4cCGGyQHuUVsidA"><button> ARTS - 150 ITEMS</button></a>
+            </td></p>
+        </tr>
+
+        <tr>
+            <div class="imageb">
+            <td><img src="hpic/h1 (7).jpg" alt="Image 3"></td>
+            <td><img src="hpic/h1 (8).jpg" alt="Image 4"></td>
+        </div></tr>
+        <tr>
+            <td colspan="2">
+                <a href="https://terabox.com/s/1OdqC_BW4cCGGyQHuUVsidA"><button> ARTS - 150 ITEMS</button></a>
+            </td></p>
+        </tr>
+    </table>
+</body>
+</html>
+
             pointer-events: none;
             opacity: 1;
             animation: burst 1s ease-out forwards;
