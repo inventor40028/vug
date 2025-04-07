@@ -74,39 +74,26 @@ table {
   min-width: 320px; /* Make sure it's wide enough to fit all 3 cells */
 }
 
-td {
-  border: 1px solid yellow;
-  padding: 10px;
-  text-align: center;
-  vertical-align: top;
+tr{
+	width: 108px;
+	height: auto;
 }
-tbody {
-  overflow-x: auto;
-  width: 100%;
-}
-
-tbody table {
-  min-width: 960px; /* 320px x 3 */
-  border-collapse: collapse;
-}
-
-tbody td {
-  border: 1px solid yellow;
-  padding: 10px;
-}
-
+iframe{
+	 width: 85%;
+	    }
 /* Mobile screen handling (below 768px) */
 @media screen and (max-width: 768px) {
-tbody {
-    overflow-x: auto;
-    display: block;
-    width: 100%;
-  }
-
-  table {
-    min-width: 720px; /* Minimum width to fit all 3 columns */
-  }
+tr{
+	width: 100%;
+	
 }
+	td{
+		width: 105px;
+		height: auto"
+	}
+iframe{
+	 width: 90%;
+	    }
 }
 img {
     width: 85%; /* Adjust the percentage as needed */
