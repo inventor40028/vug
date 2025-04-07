@@ -78,7 +78,21 @@ td {
   border: 1px solid yellow;
   padding: 10px;
   text-align: center;
-	width:105px;
+  vertical-align: top;
+}
+
+/* Mobile screen handling (below 768px) */
+@media screen and (max-width: 768px) {
+  .table-wrapper {
+    overflow-x: auto;
+    display: block;
+    width: 100%;
+  }
+
+  table {
+    min-width: 720px; /* Minimum width to fit all 3 columns */
+  }
+}
 }
 img {
     width: 85%; /* Adjust the percentage as needed */
