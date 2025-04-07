@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
-        <script type='text/javascript' src='//pl26062720.effectiveratecpm.com/5a/d6/b4/5ad6b4bde9d8cc657c6f1dc69fdfc053.js'></script>
-        <meta name="juicyads-site-verification" content="2cc5a7204efae30d42dc55b32c53cd44">
+      <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
         <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>
-VUG WORLD...
+PREMUIM FREE VUG WORLD...
         </title>
         <style>
-@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
 
 h1 {
     font-family: 'Bebas Neue', cursive;
@@ -25,24 +23,38 @@ body {
     text-align: center;
     margin: 0;
     font-family: 'Bebas Neue', cursive;
- 
+    overflow-x: hidden;
+     
 }
+.video-container {
+            display: inline-block;
+            position: relative;
+            margin: 10px ;
+            border: 1px solid rgb(41, 41, 39);
+  border-radius: 10px;
+  padding: 1px;
+  background-color: #000; /* black background */
+  width: 310px;
+  height: auto;
+
+  text-align: center;
+        }
 button{
     background:    #ebbe14;
-background:    linear-gradient(#0b0b0b, #ebbe14 50%, #0b0b0b);
+background:   (#dfe20c 50%);
 border:        1px solid #000000;
-border-radius: 17px;
+border-radius: 5px;
 width:         196px;
-height:        50px;
-color:         #000000;
+height:        auto;
+color:         rgb(0, 0, 0);
 display:       inline-block;
 font:          italic bold 30px/50px "Roboto", sans-serif;
 text-align:    center;
 text-shadow:   3px 2px #d9d907;
 }
 button:hover{
-  background:    #000000;
-background:    linear-gradient(#fbff00, #000000 50%, #ffe600);
+  background:    #ccc90b;
+background:    linear-gradient(#fbff00, #ffe600);
 border:        1px solid #000000;
 border-radius: 17px;
 width:         200px;
@@ -57,7 +69,7 @@ transform: scale(1.05); /* Slight zoom effect */
 }
 .video
     {
-    width: 320px;
+    width: 300px;
     height: auto;
     display: block;
     margin: auto;
@@ -68,20 +80,14 @@ transform: scale(1.05); /* Slight zoom effect */
 
 }
 .video:hover {
-    transform: scale(1.05); /* Slight zoom effect */
+    transform: scale(1.02); /* Slight zoom effect */
     box-shadow: 0 0 25px rgba(255, 255, 0, 1); /* Brighter glow on hover */
 }
 
 h1{
   font:"Luckiest Guy", sans-serif;
 }
-.video-container {
-    border: 1px solid yellow; /* Thin yellow border */
-    width: 360px; /* Fixed width */
-    height: auto;
-    display: inline-block; /* Adjusts height automatically */
-    padding: 0px; /* Adds some space inside */
-}
+
         
 
 .emoji {
@@ -102,12 +108,466 @@ h1{
                 transform: scale(0.5) translate(var(--x), var(--y));
             }
         }
+        img {
+    width: 85%; /* Adjust the percentage as needed */
+    height: auto; /* Maintains aspect ratio */
+    display: block;
+    margin: auto;
+    border: 1px solid yellow; /* Border color */
+    border-radius: 1px; /* Rounded corners */
+    box-shadow: 0 0 3px rgba(255, 255, 0, 0.7); /* Glowing effect */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+img:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 0 15px rgba(255, 255, 0, 1); /* Brighter glow on hover */
+}
+
+
+.carousel-container::-webkit-scrollbar { 
+    height: 10px;
+}
+
+.carousel-container::-webkit-scrollbar-thumb {
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+.carousel-container::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.carousel-container {
+    width: 95%;
+    max-width: 1000px;
+    height: 500px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 15px;
+    scroll-snap-type: x mandatory;
+    position: relative;
+    background: rgba(0, 0, 0, 0.9);
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.carousel {
+    display: flex;
+    gap: 20px;
+    transition: transform 1s ease-in-out;
+}
+
+.carousel-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    flex: 0 0 auto;
+}
+
+.carousel img {
+    width: 450px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    scroll-snap-align: center;
+    filter: blur(3px);
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+
+.carousel img.active {
+    transform: scale(1.08);
+    box-shadow: 0 0 25px yellow;
+    z-index: 3;
+    filter: blur(0);
+    opacity: 1;
+}
+
+.h4 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: yellow;
+}
+
+.carousel .h4.active {
+    transform: scale(1.2);
+    box-shadow: 0 0 20px yellow;
+    z-index: 3;
+    filter: blur(0);
+    opacity: 1;
+}
+
+.content-wrapper {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 📱 Mobile Styles */
+@media screen and (max-width: 768px) {
+  .carousel-container::-webkit-scrollbar {
+    height: 10px;
+}
+
+.carousel-container::-webkit-scrollbar-thumb {
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+.carousel-container::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+
+        .carousel-container {
+            width: 310px;
+            height: 370px;
+            overflow-x: auto;
+            overflow-y: hidden;
+            padding: 10px;
+            scroll-snap-type: x mandatory;
+            position: relative;
+            background: rgba(0, 0, 0, 0.9);
+            white-space: nowrap;
+            align-items: center; 
+        }
+
+        .carousel {
+            display: flex;
+            gap: 10px;
+            transition: transform 1s ease-in-out;
+        }
+
+        .carousel-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* vertical centering */
+    height: 100%; /* or fixed height if needed */
+    text-align: center;
+    flex: 0 0 auto;
+}
+
+
+        .carousel img {
+    width: 270px;
+    height: 200px;
+    object-fit: cover; /* crops and fills while keeping center */
+    object-position: center; /* centers the crop */
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+    scroll-snap-align: center;
+    filter: blur(3px);
+    opacity: 0.6;
+}
+
+        
+        
+        .carousel img.active {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px yellow;
+            position: relative;
+            z-index: 3;
+            filter: blur(0);
+            opacity: 1;
+        }
+
+        .h4 {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            color: yellow;
+        }
+        .carousel .h4.active{
+            transform: scale(1.2);
+            box-shadow: 0 0 20px yellow;
+         
+            z-index: 3;
+            filter: blur(0);
+            opacity: 1;
+        }
+        .content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+}
+
+.popup-menu {
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  background: black;
+  border: 2px solid yellow;
+  border-radius: 8px;
+  padding: 10px;
+  display: none;
+  z-index: 999999;
+}
+.popup-menu:hover {
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  background: black;
+  border: 2px solid yellow;
+  border-radius: 8px;
+  padding: 10px;
+  display: none;
+  z-index: 999999;
+}
+.popup-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.popup-menu ul li {
+  margin: 10px 0;
+}
+
+.popup-menu ul li a {
+  color: yellow;
+  text-decoration: none;
+  font-weight: bold;
+}
+.popup-menu ul li a:hover{
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: yellow;
+}
+
 </style>
     </head>
     <body>
-        <script type='text/javascript' src='//pl24374636.effectiveratecpm.com/53/ab/9d/53ab9df4e3f5e399a77ebf4920096a05.js'></script>
+      <center>
+      <p>
+        <div style="display: flex; flex-direction: column; align-items: center;">
+            <h4 style="color: yellow; text-align: center; margin-bottom: 10px;">FREE PREMUIM VIDEOS</h4>
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <h3 style="color: yellow; text-align: center; margin-bottom: 10px;">🔥LATEST🔥</h3>
+                <div style="display: flex; flex-direction: column; align-items: center;">
+                  <h4 style="color: yellow; text-align: center; margin-bottom: 10px;">👇THESE ARE NOT ADS👇</h4>
+              
+                <table>
+                    <tbody>
+                        
+        <div class="carousel-container">
+            <div class="carousel">
+              <div class="carousel-item">
+                <a href="https://terabox.com/s/1kAZvmn8JdFPPbTgga8yw2g" ><img src="https://od.lk/s/MzVfNTg1NTE3MzRf/20250407_000741.gif" alt="Image 1"></a>
+                <h4>Fuck The House Maid...</h4>
+            </div>
+                <div class="carousel-item">
+                    <a href="https://terabox.com/s/1oIvtCkq9y-HXSzYW0b0AsA" ><img src="https://od.lk/s/MzVfNTg1Mzg1Nzdf/20250405_230618.gif" alt="Image 1"></a>
+                    <h4>Fakes Sickness and Fuc...</h4>
+                </div>
+                <div class="carousel-item">
+                    <a href="https://terabox.com/s/1C2uCtDgV-E_FG9WCDk-6-g" ><img src="https://od.lk/s/MzVfNTg1Mzg1Nzhf/20250405_230636.gif" alt="Image 2"></a>
+                    <h4>Wanting Step Mom Bubble Bath..</h4>
+                </div>
+                <div class="carousel-item">
+                    <a href="https://terabox.com/s/1Cejnkayff9oeacrsiDcFIA" > <img src="https://od.lk/s/MzVfNTg1Mzg1ODJf/20250405_232313.gif" alt="Image 3"></a>
+                    <h4>Fucking In Public</h4>
+                </div>
+                <div class="carousel-item">
+                    <a href="https://terabox.com/s/1UgTV9mAeC7xZrOfM8Pur8A" > <img src="https://od.lk/s/MzVfNTg1Mzg2MDFf/20250405_232438.gif" alt="Image 4"></a>
+                    <h4>Fucked Her While She was Doing The Landuary</h4>
+                </div>
+                <div class="carousel-item">
+                    <a href="https://terabox.com/s/127Q_EUYEHnc3rOg-8urweQ" ><img src="https://od.lk/s/MzVfNTg1Mzg2MTBf/20250405_232611.gif" alt="Image 4"></a>
+                    <h4>She Hides In Boys Locker Room</h4>
+                </div>
+                <div class="carousel-item">
+                    <a href="https://terabox.com/s/1WhVLiTTJhARlkC83JKeAZw" >  <img src="https://od.lk/s/MzVfNTg1Mzg2NDNf/20250405_233001.gif" alt="Image 4"></a>
+                    <h4>She Gets Fucked Hard</h4>
+                </div>
+                <div class="carousel-item">
+                    <a href="https://terabox.com/s/1pN9K_8crKxZnS8x1yDBW0A" > <img src="https://od.lk/s/MzVfNTg1Mzg2NDVf/20250405_233238.gif" alt="Image 4"></a>
+                    <h4>BEST THREESOME </h4>
+                </div>
+                <div class="carousel-item">
+                    <a href="https://terabox.com/s/1igSEJD2TIkuz0PpPUR85dg" > <img src="https://od.lk/s/MzVfNTg1Mzg2NjJf/20250405_233325.gif" alt="Image 4"></a>
+                    <h4>He fucks Girlfreind Best Freind</h4>
+                </div>
+                <div class="carousel-item">
+                    <a href="https://terabox.com/s/192_C4fzv38lmUOGKENGQSw" >  <img src="https://od.lk/s/MzVfNTg1Mzg3MDZf/20250405_233423.gif" alt="Image 4"></a>
+                    <h4>He Was Horny And Fucks Roughly</h4>
+                  </div>
+    
+                  <div class="carousel-item">
+                      <a href="https://terabox.com/s/1bIssUIEWpHbXh4LBg9UhCQ" >  <img src="https://od.lk/s/MzVfNTg1Mzg3MzNf/20250405_233620.gif" alt="Image 4"></a>
+                      <h4>FUCKS STEPMOM HARD</h4>
+                    </div>
+                  <div class="carousel-item">
+                        <a href="https://terabox.com/s/1f86tl7nuiKRgEKLF7CLdGQ" >  <img src="https://od.lk/s/MzVfNTg1Mzg3MjRf/20250405_234517.gif" alt="Image 4"></a>
+                        <h4>Double the Fun</h4>
+                      </div>
+                <div class="carousel-item">
+                          <a href="https://terabox.com/s/15hAN1PMmycV0TDRB7sNRcA" >  <img src="https://od.lk/s/MzVfNTg1Mzg3Mzlf/20250406_000203.gif" alt="Image 4"></a>
+                          <h4>One Man In FouSome</h4>  
+                        </div>     
+                        <div class="carousel-item">
+                          <a href="https://terabox.com/s/1jLyF3p0O7m3bBq4Gy09QsA" >  <img src="https://od.lk/s/MzVfNTg1Mzg3NDBf/Brazzers%20GF%20stepmom_1.gif" alt="Image 4"></a>
+                          <h4>Fucking Girlfreind StepMom</h4>  
+                        </div> 
+
+                        <div class="carousel-item">
+                          <a href="https://terabox.com/s/1pDWULAF5ybSlD2QtUuwhEg" >  <img src="https://od.lk/s/MzVfNTg1Mzg3NDNf/VID_20250405_034133_862_1.gif" alt="Image 4"></a>
+                          <h4>Watching sis as she fucks...</h4>  
+                        </div> 
+
+                        <div class="carousel-item">
+                          <a href="https://terabox.com/s/11ZKhrQjoNA_EFqTwoGB8Lg" >  <img src="https://od.lk/s/MzVfNTg1Mzg3NDhf/VID-20250401-WA0223_1.gif" alt="Image 4"></a>
+                          <h4>Fucking During Holidays</h4>  
+                        </div> 
+                      
+                      <div class="carousel-item">
+                        <a href="https://terabox.com/s/1X9z_PEJjyNdSJcCFGsJWLg" >  <img src="https://od.lk/s/MzVfNTg1Mzg3NjRf/VID-20250401-WA0224_1.gif" alt="Image 4"></a>
+                        <h4>JOINING DAD FUCK STEPMON</h4>  
+                      </div> 
+        </div>
+
+                    </div> 
+               </div>
+               </tbody>
+               </table>
+               <div style="display: flex; flex-direction: column; align-items: center;">
+                <h4 style="color: yellow; text-align: center; margin-bottom: 10px;">please wait while the others load👇</h4>
+            
+            
+    <button1 class="button1" onclick="togglePopup()" style="position: fixed; z-index: 999999; bottom: 0px; right: 0px; background: yellow; color: black; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">📂 Menu</button1>
+    
+    <div id="popupMenu" class="popup-menu">
+      <ul>
+        <li><a href="full.html">HOME</a></li>
+        <li><a href="vidg.html">FREE PREMUIM VIDEOS</a></li>
+        <li><a href="comics.html">COMIC WEBSITE</a></li>
+        <li><a href="picsg.html">HOT PICS</a></li>
+        <li><a href="apps.html">DOWLOAD VUG APP</a></li> <li><a href="https://www.terabox.com/referral/4400725621199">POWERED BY TERABOX</a>
+        </li>
+
+        <li><script type="text/javascript">
+            atOptions = {
+                'key' : '108fa94244896e77f92dc761e38f8e39',
+                'format' : 'iframe',
+                'height' : 50,
+                'width' : 320,
+                'params' : {}
+            };
+        </script>
+        <script type="text/javascript" src="//www.highperformanceformat.com/108fa94244896e77f92dc761e38f8e39/invoke.js"></script>
+    </li>
+      </ul>
+    </div>
+    <div id="google_translate_element"></div>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+      }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+
+
+
+    
       <script>
- 
+   
+        function togglePopup() {
+  const menu = document.getElementById("popupMenu");
+  menu.style.display = (menu.style.display === "block") ? "none" : "block";
+}
+        let currentIndex = 0;
+        let direction = 1; // 1 = forward, -1 = backward
+        const items = document.querySelectorAll(".carousel-item");
+        const images = document.querySelectorAll(".carousel img");
+        const totalImages = images.length;
+        const container = document.querySelector(".carousel-container");
+    
+        let scrollTimer = null;
+        let autoScrollInterval = setInterval(autoScroll, 2000);
+    
+        function updateCarousel() {
+            images.forEach(img => img.classList.remove("active"));
+            const image = images[currentIndex];
+            image.classList.add("active");
+    
+            const scrollTo = image.offsetLeft - container.clientWidth / 2 + image.clientWidth / 2;
+            container.scrollTo({ left: scrollTo, behavior: 'smooth' });
+        }
+    
+        function autoScroll() {
+            currentIndex += direction;
+    
+            if (currentIndex >= totalImages - 1 || currentIndex <= 0) {
+                direction *= -1; // Reverse direction
+            }
+    
+            updateCarousel();
+        }
+    
+        container.addEventListener("scroll", () => {
+            clearInterval(autoScrollInterval);
+            clearTimeout(scrollTimer);
+    
+            scrollTimer = setTimeout(() => {
+                autoScrollInterval = setInterval(autoScroll, 2500);
+            }, 1000);
+    
+            let centerX = container.scrollLeft + container.clientWidth / 2;
+            let closestIndex = 0;
+            let minDistance = Infinity;
+    
+            images.forEach((img, index) => {
+                let imgCenter = img.offsetLeft + img.clientWidth / 2;
+                let distance = Math.abs(centerX - imgCenter);
+                if (distance < minDistance) {
+                    minDistance = distance;
+                    closestIndex = index;
+                }
+            });
+    
+            images.forEach(img => img.classList.remove("active"));
+            images[closestIndex].classList.add("active");
+            currentIndex = closestIndex;
+        });
+    
+        updateCarousel();
+
+        let startX = 0;
+let isSwiping = false;
+
+container.addEventListener("touchstart", (e) => {
+    startX = e.touches[0].clientX;
+    isSwiping = true;
+    clearInterval(autoScrollInterval); // pause auto-scroll
+});
+
+container.addEventListener("touchmove", (e) => {
+    if (!isSwiping) return;
+    let currentX = e.touches[0].clientX;
+    let diffX = startX - currentX;
+    container.scrollLeft += diffX;
+    startX = currentX;
+});
+
+container.addEventListener("touchend", () => {
+    isSwiping = false;
+    scrollTimer = setTimeout(() => {
+        autoScrollInterval = setInterval(autoScroll, 3000); // resume auto-scroll
+    }, 1000);
+});
 
         document.addEventListener("click", function(event) {
             let emojis = ["🍑", "🍆", "🔞", "🥵"];
@@ -151,35 +611,298 @@ h1{
             }
           </script>
           <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+ 
+
+
+
           
+            <div class="video-container">
+               <p>👇PREVIEW VIDEO👇</p>
+               <iframe class="video" src="https://terabox.tech/play.html?url=https%3A%2F%2F1024terabox.com%2Fs%2F1ATN-9seVfkoR2MODVJwP6A" width="700px" height="600px" frameborder="0" allowfullscreen scrolling="no"></iframe>
+                                            <a href="https://terabox.com/s/1ATN-9seVfkoR2MODVJwP6A"><button>FULL VIDEO</button></a> 
+                             <p>HOUSE WORKER CAUGHT THEM MASTURBATING</p>
+                           </p>
+                           </div>         
+
+          
+            <div class="video-container">
+               <p>👇PREVIEW VIDEO👇</p>
+               <iframe class="video" src="https://terabox.tech/play.html?url=https%3A%2F%2F1024terabox.com%2Fs%2F1C2uCtDgV-E_FG9WCDk-6-g" width="700px" height="600px" frameborder="0" allowfullscreen scrolling="no"></iframe>                                                    
+                 <p>👇FULL VIDEO👇</p>
+                             <a href="https://terabox.com/s/1C2uCtDgV-E_FG9WCDk-6-g"><button>FULL VIDEO</button></a> 
+                             <p>Fucking StepMom Bubble Bath body</p>
+                           </p>
+                           </div>         
+
+         
+            <div class="video-container">
+               <p>👇PREVIEW VIDEO👇</p>
+               <iframe class="video" src="https://terabox.tech/play.html?url=https%3A%2F%2F1024terabox.com%2Fs%2F11NNbmdNuvPY0HchyqmDF1w" width="700px" height="600px" frameborder="0" allowfullscreen scrolling="no"></iframe>
+                                                      <p>👇FULL VIDEO👇</p>
+                             <a href="https://terabox.com/s/11NNbmdNuvPY0HchyqmDF1w"><button>FULL VIDEO</button></a> 
+                             <p> FiveSome With 3 men and 2 women  </p>
+                           </p>
+                           </div>         
+
+     
+
+
+          
+       
+            <div class="video-container">
+               <p>👇PREVIEW VIDEO👇</p>
+               <iframe class="video" src="https://terabox.tech/play.html?url=https%3A%2F%2F1024terabox.com%2Fs%2F1ggijxvQN2cHVrLMvkW9NPw" width="700px" height="600px" frameborder="0" allowfullscreen scrolling="no"></iframe>
+                                       <p>👇FULL VIDEO👇</p>
+                             <a href="https://terabox.com/s/1ggijxvQN2cHVrLMvkW9NPw"><button>FULL VIDEO</button></a> 
+                             <p> Pateint Wait While Nurses  Fuck Themeselves </p>
+                           </p>
+                           </div>         
+
+          
+            <div class="video-container">
+               <p>👇PREVIEW VIDEO👇</p>
+               <iframe class="video" src="https://terabox.tech/play.html?url=https%3A%2F%2F1024terabox.com%2Fs%2F1oIvtCkq9y-HXSzYW0b0AsA" width="700px" height="600px" frameborder="0" allowfullscreen scrolling="no"></iframe>
+                        <p>👇FULL VIDEO👇</p>
+                             <a href="https://terabox.com/s/1oIvtCkq9y-HXSzYW0b0AsA"><button>FULL VIDEO</button></a> 
+                             <p> Son Fakes Sickness and Fucked .... </p>
+                           </p>
+                           </div>         
+
+    
+          
+             
+            <div class="video-container">
+               <p>👇PREVIEW VIDEO👇</p>
+               <iframe class="video" src="https://terabox.tech/play.html?url=https%3A%2F%2Fterabox.com%2Fs%2F1X9z_PEJjyNdSJcCFGsJWLg" width="700px" height="600px" frameborder="0" allowfullscreen scrolling="no"></iframe>
+                                  <p>👇FULL VIDEO👇</p>
+                             <a href="https://terabox.com/s/1X9z_PEJjyNdSJcCFGsJWLg"><button>FULL VIDEO</button></a> 
+                             <p> JOINING DAD TO FUCK STEPMOM </p>
+                           </p>
+                           </div>         
+
+          
+        
+            <div class="video-container">
+               <p>👇PREVIEW VIDEO👇</p>
+               <iframe class="video" src="https://terabox.tech/play.html?url=https%3A%2F%2F1024terabox.com%2Fs%2F1Cejnkayff9oeacrsiDcFIA" width="700px" height="600px" frameborder="0" allowfullscreen scrolling="no"></iframe>
+            <p>👇FULL VIDEO👇</p>
+                             <a href="https://terabox.com/s/1Cejnkayff9oeacrsiDcFIA"><button>FULL VIDEO</button></a> 
+                             <p> Getting Fucked In public </p>
+                           </p>
+                           </div>         
+
+           
+          
+          
+         
+            <div class="video-container">
+               <p>👇PREVIEW VIDEO👇</p>
+               <iframe class="video" src="https://terabox.tech/play.html?url=https%3A%2F%2F1024terabox.com%2Fs%2F13KTYjclcntR-XtQKmEvZ6w" width="700px" height="600px" frameborder="0" allowfullscreen scrolling="no"></iframe>
+                                       <p>👇FULL VIDEO👇</p>
+                             <a href="https://terabox.com/s/13KTYjclcntR-XtQKmEvZ6w"><button>FULL VIDEO</button></a> 
+                             <p> Female Constructor Gets Her Ass Creampied </p>
+                           </p>
+                           </div>         
+
+            
+          
+          
+          
+          
+          
+          
+            <div class="video-container">
+               <p>👇PREVIEW VIDEO👇</p>
+               <iframe class="video" src="https://terabox.tech/play.html?url=https%3A%2F%2F1024terabox.com%2Fs%2F1UgTV9mAeC7xZrOfM8Pur8A" width="700px" height="600px" frameborder="0" allowfullscreen scrolling="no"></iframe>
+                        <p>👇FULL VIDEO👇</p>
+                             <a href="https://terabox.com/s/1UgTV9mAeC7xZrOfM8Pur8A"><button>FULL VIDEO</button></a> 
+                             <p> Fucks Her Hard While She Does The Landuary 💀 </p>
+                           </p>
+                           </div>         
+
+          
+            <div class="video-container">
+               <p>👇PREVIEW VIDEO👇</p>
+               <iframe class="video" src="https://terabox.tech/play.html?url=https%3A%2F%2F1024terabox.com%2Fs%2F1igSEJD2TIkuz0PpPUR85dg" width="700px" height="600px" frameborder="0" allowfullscreen scrolling="no"></iframe>
+                                    <p>👇FULL VIDEO👇</p>
+                             <a href="https://terabox.com/s/1igSEJD2TIkuz0PpPUR85dg"><button>FULL VIDEO</button></a> 
+                             <p> He Fucks Hot Girlfreind Best Friend  </p>
+                           </p>
+                           </div>         
+
+
+        
+            <div class="video-container">
+               <p>👇PREVIEW VIDEO👇</p>
+               <iframe class="video" src="https://terabox.tech/play.html?url=https%3A%2F%2F1024terabox.com%2Fs%2F1ABEWmDAcOpiBSMtiHx00Mg" width="700px" height="600px" frameborder="0" allowfullscreen scrolling="no"></iframe>
+                <p>👇FULL VIDEO👇</p>
+                             <a href="https://terabox.com/s/1ABEWmDAcOpiBSMtiHx00Mg"><button>FULL VIDEO</button></a> 
+                             <p> Massager Oils up Customer ans fucks him </p>
+                          
+                           </div>
+
+
+         
+            <div class="video-container">
+               <p>👇PREVIEW VIDEO👇</p>
+               <iframe class="video" src="https://terabox.tech/play.html?url=https%3A%2F%2F1024terabox.com%2Fs%2F127Q_EUYEHnc3rOg-8urweQ" width="700px" height="600px" frameborder="0" allowfullscreen scrolling="no"></iframe>
+                   <p>👇FULL VIDEO👇</p>
+                             <a href="https://terabox.com/s/127Q_EUYEHnc3rOg-8urweQ"><button>FULL VIDEO</button></a> 
+                             <p> She Hides In Boys Locker Room And Got Fucked  </p>
+                          
+                           </div>
+
+
 
           <p>
             <div class="video-container">
-              <iframe class="video" src="https://terabox.tech/play.html?url=https%3A%2F%2Fterabox.com%2Fs%2F16j4gXPiu8UudcPXI2zxjCg" width="700px" height="600px" frameborder="0" allowfullscreen scrolling="no"></iframe>              Destroying my hot girlfreind ass..... 11:09 min
-            <p>PREVIEW VIDEO </p>
-              
-             <a href="https://terabox.com/s/16j4gXPiu8UudcPXI2zxjCg"><button>FULL VIDEO</button></a> 
-            </p>
-            </div>
-   </p>
+               <p>👇PREVIEW VIDEO👇</p>
+               <iframe class="video" src="https://terabox.tech/play.html?url=https%3A%2F%2Fterabox.com%2Fs%2F1WhVLiTTJhARlkC83JKeAZw" width="700px" height="600px" frameborder="0" allowfullscreen scrolling="no"></iframe>
+                                       <p>👇FULL VIDEO👇</p>
+                             <a href="https://terabox.com/s/1WhVLiTTJhARlkC83JKeAZw"><button>FULL VIDEO</button></a> 
+                             <p> SHE GOT FUCKED ROUGHLY NO MERCY 💀 </p>
+                           </p>
+                           </div>
+
+                           
+                            <div class="video-container">
+                               <p>👇PREVIEW VIDEO👇</p>
+                               <iframe class="video" src="https://terabox.tech/play.html?url=https%3A%2F%2F1024terabox.com%2Fs%2F15hAN1PMmycV0TDRB7sNRcA" width="700px" height="600px" frameborder="0" allowfullscreen scrolling="no"></iframe>
+                                                          <p>👇FULL VIDEO👇</p>
+                                             <a href="https://terabox.com/s/15hAN1PMmycV0TDRB7sNRcA"><button>FULL VIDEO</button></a> 
+                                             <p> One man Standing In FourSome  </p>
+                                           </p>
+                                           </div>
+
+                                         
+                                            <div class="video-container">
+                                               <p>👇PREVIEW VIDEO👇</p>
+                                               <iframe class="video" src="https://terabox.tech/play.html?url=https%3A%2F%2F1024terabox.com%2Fs%2F11ZKhrQjoNA_EFqTwoGB8Lg" width="700px" height="600px" frameborder="0" allowfullscreen scrolling="no"></iframe>
+                                                                                                                                    <p>👇FULL VIDEO👇</p>
+                                                             <a href="https://terabox.com/s/11ZKhrQjoNA_EFqTwoGB8Lg"><button>FULL VIDEO</button></a> 
+                                                             <p>STEPMOM LETS STEP SON FUCK HIM HARD </p>
+                                                                </p>
+                                                           </div>
+
+                                                           
+                                                            <div class="video-container">
+                                                               <p>👇PREVIEW VIDEO👇</p>
+                                                               <iframe class="video" src="https://terabox.tech/play.html?url=https%3A%2F%2Fterabox.com%2Fs%2F1w4qEqpjvg3-wKcRksDge5Q" width="700px" height="600px" frameborder="0" allowfullscreen scrolling="no"></iframe>
+                                                                   <p>👇FULL VIDEO👇</p>
+                                                                             <a href="https://terabox.com/s/1w4qEqpjvg3-wKcRksDge5Q"><button>FULL VIDEO</button></a> 
+                                                                             <p> FUCKING HER HARD IN THE BATHROOM </p>
+                                                                           </p>
+                                                                           </div>
+
+
+
+
+
+
 
 
 
           
-
-
-    <p>
             <div class="video-container">
                <p>👇PREVIEW VIDEO👇</p>
-               <iframe class="video" src="https://terabox.tech/play.html?url=https%3A%2F%2Fterabox.com%2Fs%2F1n4d0z-AoySw3v4MM6WO3DA" width="700px" height="600px" frameborder="0" allowfullscreen scrolling="no"></iframe>
-                             <p>👇FULL VIDEO👇</p>
-                             <iframe class="video" width="100%" height="100%"  frameborder="0" src="https://terabox.com/sharing/embed?surl=n4d0z-AoySw3v4MM6WO3DA&resolution=480&autoplay=false&mute=false&uk=4400725621199&fid=682352502520519&slid=" allowfullscreen></iframe>
-                                                <p> FUCKS HER WHILE SHE IS READING 10:30min </p>
-             <a href="https://terabox.com/s/1n4d0z-AoySw3v4MM6WO3DA"><button>FULL VIDEO</button></a> 
+               <iframe class="video" src="https://terabox.tech/play.html?url=https%3A%2F%2F1024terabox.com%2Fs%2F1jLyF3p0O7m3bBq4Gy09QsA" width="700px" height="600px" frameborder="0" allowfullscreen scrolling="no"></iframe>
+                                                     <p>👇FULL VIDEO👇</p>
+                             <a href="https://terabox.com/s/1jLyF3p0O7m3bBq4Gy09QsA"><button>FULL VIDEO</button></a> 
+                             <p> FUCKING GIRL FREIND BUBBLE STEPMOM BUTT  </p>
+                           </p>
+                           </div>
+
+        
+            <div class="video-container">
+               <p>👇PREVIEW VIDEO👇</p>
+               <iframe class="video" src="https://terabox.tech/play.html?url=https%3A%2F%2Fterabox.com%2Fs%2F1f86tl7nuiKRgEKLF7CLdGQ" width="700px" height="600px" frameborder="0" allowfullscreen scrolling="no"></iframe>                           <p>👇FULL VIDEO👇</p>
+                             <a href="https://terabox.com/s/1f86tl7nuiKRgEKLF7CLdGQ"><button>FULL VIDEO</button></a> 
+                             <p> Double the Fun </p>
+                           </p>
+                           </div>
+
+
+         
+            <div class="video-container">
+               <p>👇PREVIEW VIDEO👇</p>
+               <iframe class="video" src="https://terabox.tech/play.html?url=https%3A%2F%2F1024terabox.com%2Fs%2F1bIssUIEWpHbXh4LBg9UhCQ" width="700px" height="600px" frameborder="0" allowfullscreen scrolling="no"></iframe>
+   <p>👇FULL VIDEO👇</p>
+                             <a href="https://terabox.com/s/1bIssUIEWpHbXh4LBg9UhCQ"><button>FULL VIDEO</button></a> 
+                             <p> Hard Rough Sex </p>
+                           </p>
+                           </div>
+
+
+        
+            <div class="video-container">
+               <p>👇PREVIEW VIDEO👇</p>
+               <iframe class="video" src="https://terabox.tech/play.html?url=https%3A%2F%2F1024terabox.com%2Fs%2F192_C4fzv38lmUOGKENGQSw" width="700px" height="600px" frameborder="0" allowfullscreen scrolling="no"></iframe>
+                                                                  <p>👇FULL VIDEO👇</p>
+                             <a href="https://terabox.com/s/192_C4fzv38lmUOGKENGQSw"><button>FULL VIDEO</button></a> 
+                             <p> Horny As Fuck </p>
+                           </p>
+                           </div>
+
+
+        
+         
+            <div class="video-container">
+               <p>👇PREVIEW VIDEO👇</p>
+               <iframe class="video" src="https://terabox.tech/play.html?url=https%3A%2F%2F1024terabox.com%2Fs%2F1XcUiRiBVyJhHlgQjHttMHA" width="700px" height="600px" frameborder="0" allowfullscreen scrolling="no"></iframe>
+                                                                  <p>👇FULL VIDEO👇</p>
+                             <a href="https://terabox.com/s/1XcUiRiBVyJhHlgQjHttMHA"><button>FULL VIDEO</button></a> 
+                             <p> HE Fucks The the Bride </p>
+                           </p>
+                           </div>
+        
+   
+         
+                           
+            <div class="video-container">
+               <p>👇PREVIEW VIDEO👇</p>
+               <iframe class="video" src="https://terabox.tech/play.html?url=https%3A%2F%2F1024terabox.com%2Fs%2F1dQfqGrGdEc4PtzeDJv7QTw" width="700px" height="600px" frameborder="0" allowfullscreen scrolling="no"></iframe>
+                                                   <p>👇FULL VIDEO👇</p>
+                             <a href="https://terabox.com/s/1dQfqGrGdEc4PtzeDJv7QTw"><button>FULL VIDEO</button></a> 
+                             <p>Blind Folded Bride </p>
+                           </p>
+                           </div>
+
+                           
+
+  
+  
+         
+    <div class="video-container">
+       <p>👇PREVIEW VIDEO👇</p>
+       <iframe class="video" src="https://terabox.tech/play.html?url=https%3A%2F%2F1024terabox.com%2Fs%2F1pDWULAF5ybSlD2QtUuwhEg" width="700px" height="600px" frameborder="0" allowfullscreen scrolling="no"></iframe>
+                            <p>👇FULL VIDEO👇</p>
+                     <a href="https://terabox.com/s/1pDWULAF5ybSlD2QtUuwhEg"><button>FULL VIDEO</button></a> 
+                     <p> Male massager Fucks Her customer Hard </p>
+                   </p>
+                   </div>
+
+
+    <div class="video-container">
+       <p>👇PREVIEW VIDEO👇</p>
+       <iframe class="video" src="https://terabox.tech/play.html?url=https%3A%2F%2F1024terabox.com%2Fs%2F1kAZvmn8JdFPPbTgga8yw2g" width="700px" height="600px" frameborder="0" allowfullscreen scrolling="no"></iframe>
+                                   <p>👇FULL VIDEO👇</p>
+                     <a href="https://terabox.com/s/1kAZvmn8JdFPPbTgga8yw2g"><button>FULL VIDEO</button></a> 
+                     <p> Fucking House Maid</p>
+                   </p>
+                   </div>
+
+         
+            <div class="video-container">
+               <p>👇PREVIEW VIDEO👇</p>
+               <iframe class="video" src="https://terabox.tech/play.html?url=https%3A%2F%2Fterabox.com%2Fs%2F1Od2mf0kLLaF68Jd1Qxhkuw" width="700px" height="600px" frameborder="0" allowfullscreen scrolling="no"></iframe>                             <p>👇FULL VIDEO👇</p>
+                                               
+             <a href="https://terabox.com/s/1Od2mf0kLLaF68Jd1Qxhkuw"><button>FULL VIDEO</button></a> 
+              <p> Threesome During Holidays </p>
             </p>
             </div>
   
   </p>
+
 
 
           <script type="text/javascript">
@@ -193,32 +916,28 @@ h1{
           </script>
           <script type="text/javascript" src="//www.highperformanceformat.com/108fa94244896e77f92dc761e38f8e39/invoke.js"></script>
 
-          <p>
+        
             <div class="video-container">
                <p>👇PREVIEW VIDEO👇</p>
                <iframe class="video" src="https://terabox.tech/play.html?url=https%3A%2F%2Fterabox.com%2Fs%2F10aczyaaFsIHDClb0fx4QLg" width="700px" height="600px" frameborder="0" allowfullscreen scrolling="no"></iframe>
-    <p>👇FULL VIDEO'👇</p>
-    <iframe class="video" width="100%" height="100%"  frameborder="0" src="https://terabox.com/sharing/embed?surl=GABb7IucrC7fgeLsku3S-A&resolution=480&autoplay=false&mute=false&uk=4400725621199&fid=36897615628596&slid=" allowfullscreen></iframe>
-                       <p>FUCKING IN THE POOL 36:02min </p>
+    <p>👇FULL VIDEO'👇</p>                      
              <a href="https://terabox.com/s/10aczyaaFsIHDClb0fx4QLg"><button>FULL VIDEO</button></a> 
+              <p>FUCKING IN THE POOL 36:02min </p>
             </p>
             </div>
   
-  </p>
-
-          
-          <p>
+ 
             <div class="video-container">
                <p>👇PREVIEW VIDEO👇</p>
                <iframe class="video" src="https://terabox.tech/play.html?url=https%3A%2F%2Fterabox.com%2Fs%2F1H9h1NmuQA-aNF7hfN3OLRQ" width="700px" height="600px" frameborder="0" allowfullscreen scrolling="no"></iframe>              <p>
               <p>👇FULL VIDEO'👇</p>
-              <iframe class="video" width="100%" height="100%"  frameborder="0" src="https://terabox.com/sharing/embed?surl=H9h1NmuQA-aNF7hfN3OLRQ&resolution=360&autoplay=false&mute=false&uk=4400725621199&fid=969023936491078&slid=" allowfullscreen></iframe>        
-                   <p> STEP MON FUCKS STEP SIS BOYFREIND 25:49min </p>
+                   
              <a href="https://terabox.com/s/1H9h1NmuQA-aNF7hfN3OLRQ"><button>FULL VIDEO</button></a> 
+             <p> STEP MON FUCKS STEP SIS BOYFREIND 25:49min </p>
             </p>
             </div>
   
-  </p>
+ 
 
   <script type="text/javascript">
     atOptions = {
@@ -231,33 +950,25 @@ h1{
   </script>
   <script type="text/javascript" src="//www.highperformanceformat.com/2861af1e66d3dd401fce81dc7cc6c61e/invoke.js"></script>
       
-          <p>
+          
             <div class="video-container">
                <p>👇PREVIEW VIDEO👇</p>
               <iframe class="video" src="https://terabox.tech/play.html?url=https%3A%2F%2Fterabox.com%2Fs%2F1MTLWvHsL-x1zuVvu7gFRdw" width="700px" height="600px" frameborder="0" allowfullscreen scrolling="no"></iframe>            
-              <p>👇FULL VIDEO'👇</p>
-              <iframe class="video" width="100%" height="100%"  frameborder="0" src="https://terabox.com/sharing/embed?surl=MTLWvHsL-x1zuVvu7gFRdw&resolution=360&autoplay=false&mute=false&uk=4400725621199&fid=36897615628596&slid=" allowfullscreen></iframe>
-             <p> FUCKING HARD 25:49min </p>
+        
               
-             <a href="https://terabox.com/s/1MTLWvHsL-x1zuVvu7gFRdw"><button>FULL VIDEO</button></a> 
+             <a href="https://terabox.com/s/1MTLWvHsL-x1zuVvu7gFRdw"><button>FULL VIDEO</button></a>  
+                 <p> FUCKING HARD 25:49min </p>
             </p>
             </div>
   
-  </p>
-
-
-          <p>
+ 
             <div class="video-container">
               <p>👇PREVIEW VIDEO👇</p>
               <iframe class="video" src="https://terabox.tech/play.html?url=https%3A%2F%2Fterabox.com%2Fs%2F1GABb7IucrC7fgeLsku3S-A" width="700px" height="600px" frameborder="0" allowfullscreen scrolling="no"></iframe>     
             <p>
-              <p>👇FULL VIDEO'👇</p>
-
-
-
-<iframe class="video" width="100%" height="100%"  frameborder="0" src="https://terabox.com/sharing/embed?surl=GABb7IucrC7fgeLsku3S-A&resolution=480&autoplay=false&mute=false&uk=4400725621199&fid=36897615628596&slid=" allowfullscreen></iframe>
-                <p> FUCKING IN PUBLIC 38:08min</p>
+                
              <a href="https://terabox.com/s/1GABb7IucrC7fgeLsku3S-A"><button>FULL VIDEO</button></a> 
+             <p> FUCKING IN PUBLIC 38:08min</p>
             </p>
             </div>
   
@@ -277,96 +988,84 @@ h1{
 
 
 
- <p>       
+      
           <div class="video-container">
           </p>
 
            <p>👇PREVIEW VIDEO👇</p>
            <iframe class="video" src="https://terabox.tech/play.html?url=https%3A%2F%2Fterabox.com%2Fs%2F1ZAX1bZCTjNtjZqf3BM2gNw" width="700px" height="600px" frameborder="0" allowfullscreen scrolling="no"></iframe>            
           <p>👇FULL VIDEO'👇</p>
-          <iframe class="video" width="100%" height="100%"  frameborder="0" src="https://terabox.com/sharing/embed?surl=ZAX1bZCTjNtjZqf3BM2gNw&resolution=360&autoplay=false&mute=false&uk=4400725621199&fid=1023430659847009&slid=" allowfullscreen></iframe>
-                     WIFE SISTER SWAP 28:31 min
+                     
           <p>
             <a  href="https://terabox.com/s/1ZAX1bZCTjNtjZqf3BM2gNw">
           <button>FULL VIDEO</button></a>
+          <p>
+          WIFE SISTER SWAP 28:31 min
           </p>
+        </p>
         </div>
-</p>          
+          
 
         <script async="async" data-cfasync="false" src="//pl24374750.effectiveratecpm.com/58c77aea5f8b631a9e7722c835b8f0ea/invoke.js"></script>
         <div id="container-58c77aea5f8b631a9e7722c835b8f0ea"></div>
 
-        <p>
+        
           <div class="video-container">  
              <p>👇PREVIEW VIDEO👇</p>
           <iframe class="video"src="https://terabox.tech/play.html?url=https%3A%2F%2F1024terabox.com%2Fs%2F12QWH9j-xNY5F1I9jYxMoSQ" width="700px" height="600px" frameborder="0" allowfullscreen scrolling="no"></iframe>
          
             <p>FULL VIDEO </p>
-          <iframe class="video" width="100%" height="100%"  frameborder="0" src="https://terabox.com/sharing/embed?surl=Y1iWUjL3FzJ7oH8pGD3hWg&resolution=360&autoplay=false&mute=false&uk=4400725621199&fid=291287895255449&slid=" allowfullscreen></iframe>
-          Anything You Want 37:38 min
+          
           <p>
-           <a href="https://1024terabox.com/s/1Y1iWUjL3FzJ7oH8pGD3hWg"><button>FULL VIDEO</button></a> 
+           <a href="https://terabox.com/s/1Y1iWUjL3FzJ7oH8pGD3hWg"><button>FULL VIDEO</button></a> 
+           <p> You Want 37:38 min</p>
           </p>
           </div>
- </p>
- <p>
+ 
           <div class="video-container">
              <p>👇PREVIEW VIDEO👇</p>
           <iframe class="video"src="https://terabox.tech/play.html?url=https%3A%2F%2F1024terabox.com%2Fs%2F1uKxeRhCKhLYlxqkqSyJpCw" width="700px" height="600px" frameborder="0" allowfullscreen scrolling="no"></iframe>        
-         
-            <p>👇FULL VIDEO'👇</p>
-            <iframe class="video" width="100%" height="100%"  frameborder="0" src="https://terabox.com/sharing/embed?surl=uKxeRhCKhLYlxqkqSyJpCw&resolution=360&autoplay=false&mute=false&uk=4400725621199&fid=36369346017172&slid=" allowfullscreen></iframe>
-            <p>👇FULL VIDEO'👇</p>
           Naked WonderLand 45:41 min
           <p>
-           <a href="https://1024terabox.com/s/1uKxeRhCKhLYlxqkqSyJpCw"><button>FULL VIDEO</button></a> 
+           <a href="https://terabox.com/s/1uKxeRhCKhLYlxqkqSyJpCw"><button>FULL VIDEO</button></a> 
           </p>
           </div>
- </p>
- <p>
+ 
           <div class="video-container">
+            <p>PREVIEW VIDEO </p>
             <iframe class="video"src="https://terabox.tech/play.html?url=https%3A%2F%2F1024terabox.com%2Fs%2F1uZXpRRELlKNHHM0DuGYMOQ" width="700px" height="600px" frameborder="0" allowfullscreen scrolling="no"></iframe>        
-            Step sis fixes step bro heart 32:09 min
-          <p>PREVIEW VIDEO </p>
-            <p>👇FULL VIDEO'👇</p>
-            <iframe class="video" width="100%" height="100%"  frameborder="0" src="https://terabox.com/sharing/embed?surl=uZXpRRELlKNHHM0DuGYMOQ&resolution=360&autoplay=false&mute=false&uk=4400725621199&fid=32990876706342&slid=" allowfullscreen></iframe>
+           
           
-            
-           <a href="https://1024terabox.com/s/1uZXpRRELlKNHHM0DuGYMOQ"><button>FULL VIDEO</button></a> 
+            <p>👇FULL VIDEO'👇</p>      
+           <a href="https://terabox.com/s/1uZXpRRELlKNHHM0DuGYMOQ"><button>FULL VIDEO</button></a>
+           <p>Step sis fixes step bro heart 32:09 min
           </p>
+        </p> 
           </div>
- </p>
-          <p>
+ 
           <div class="video-container">
               <p>👇PREVIEW VIDEO👇</p>
           <iframe class="video"src="https://terabox.tech/play.html?url=https%3A%2F%2F1024terabox.com%2Fs%2F1TJ-t3u6sS1LZulr_FrkA8w" width="700px" height="600px" frameborder="0" allowfullscreen scrolling="no"></iframe> 
-                
-            <p>👇FULL VIDEO'👇</p>
-            <iframe class="video" width="100%" height="100%"  frameborder="0" src="https://terabox.com/sharing/embed?surl=hGfnFA_oQnf128CMNrHbLg&resolution=360&autoplay=false&mute=false&uk=4400725621199&fid=309363060290625&slid=" allowfullscreen></iframe>
-             Threesome with zoe 44:14 min
+             
           <p>
-           <a href="https://1024terabox.com/s/1TJ-t3u6sS1LZulr_FrkA8w"><button>FULL VIDEO</button></a> 
+           <a href="https://terabox.com/s/1TJ-t3u6sS1LZulr_FrkA8w"><button>FULL VIDEO</button></a> 
           </p>
+          <p> Threesome with zoe 44:14 min </p>
           </div>
- </p>
-         
-<p>
+ 
 
 <div class="video-container">
    <p>👇PREVIEW VIDEO👇</p>
     <iframe class="video" src="https://terabox.tech/play.html?url=https%3A%2F%2F1024terabox.com%2Fs%2F1hGfnFA_oQnf128CMNrHbLg" width="700px" height="600px" frameborder="0" allowfullscreen scrolling="no"></iframe>   
     
   <p>👇FULL VIDEO'👇</p>
-  <iframe class="video" width="100%" height="100%"  frameborder="0" src="https://terabox.com/sharing/embed?surl=hGfnFA_oQnf128CMNrHbLg&resolution=360&autoplay=false&mute=false&uk=4400725621199&fid=309363060290625&slid=" allowfullscreen></iframe>
-  Nothing but Ass 1:02:10 hours
+  
     <p>
-     <a href="https://1024terabox.com/s/1hGfnFA_oQnf128CMNrHbLg"><button>FULL VIDEO</button></a> 
+     <a href="https://terabox.com/s/1hGfnFA_oQnf128CMNrHbLg"><button>FULL VIDEO</button></a><p> Nothing but Ass 1:02:10 hours</p>
     </p>
     </div>
-</p>
-<p>
+
           <div class="video-container">
-            <p>👇FULL VIDEO'👇</p>
             ...
             <p>👇PREVIEW VIDEO👇</p>
           <iframe class="video"src="" width="700px" height="600px" frameborder="0" allowfullscreen scrolling="no"></iframe>
@@ -378,10 +1077,7 @@ h1{
 
 </p>
          
-<!-- Start JuicyAds Float Ad -->
-<script type="text/javascript">juicy_adzone = '1084306';</script>
-<script type="text/javascript" src="https://poweredby.jads.co/js/jfc.js" charset="utf-8"></script>
-<!-- End JuicyAds Float Ad -->
+
         </center>
 
     </body>

@@ -1,13 +1,55 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
         <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>
 VUG WORLD...
         </title>
         <style>
+            .popup-menu {
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  background: black;
+  border: 2px solid yellow;
+  border-radius: 8px;
+  padding: 10px;
+  display: none;
+  z-index: 999999;
+}
+.popup-menu:hover {
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  background: black;
+  border: 2px solid yellow;
+  border-radius: 8px;
+  padding: 10px;
+  display: none;
+  z-index: 999999;
+}
+.popup-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.popup-menu ul li {
+  margin: 10px 0;
+}
+
+.popup-menu ul li a {
+  color: yellow;
+  text-decoration: none;
+  font-weight: bold;
+}
+.popup-menu ul li a:hover{
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: yellow;
+}
             .emoji {
             position: absolute;
             font-size: 15px;
@@ -119,11 +161,28 @@ transform: scale(1.05); /* Slight zoom effect */
                 width: 30px;
             }
 }
+.popup-menu ul li a:hover{
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  background-color: yellow;
+  border-radius: 50px;
+}
         </style>
     </head>
     <body>
         <script>
- 
+  function togglePopup() {
+          const menu = document.getElementById("popupMenu");
+          menu.style.display = (menu.style.display === "block") ? "none" : "block";
+        }
+                let currentIndex = 0;
+                let direction = 1; // 1 = forward, -1 = backward
+                const items = document.querySelectorAll(".carousel-item");
+                const images = document.querySelectorAll(".carousel img");
+                const totalImages = images.length;
+                const container = document.querySelector(".carousel-container")
 
             document.addEventListener("click", function(event) {
                 let emojis = ["🍑", "🍆", "🔞", "🥵"];
@@ -159,7 +218,28 @@ transform: scale(1.05); /* Slight zoom effect */
         <center>
             <body>
                 <div id="google_translate_element"></div>
-            
+                <div id="popupMenu" class="popup-menu">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="full.html">FREE PREMUIM VIDEOS</a></li>
+                      <li><a href="comics.html">COMIC WEBSITE</a></li>
+                      <li><a href="pics.html">HOT PICS</a></li>
+                      <li><a href="https://www.terabox.com/referral/4400725621199">POWERED BY TERABOX</a>
+                      </li>
+                      <li><a href="apps.html">DOWLOAD VUG APP</a></li>
+                      <li><script type="text/javascript">
+                          atOptions = {
+                              'key' : '108fa94244896e77f92dc761e38f8e39',
+                              'format' : 'iframe',
+                              'height' : 50,
+                              'width' : 320,
+                              'params' : {}
+                          };
+                      </script>
+                      <script type="text/javascript" src="//www.highperformanceformat.com/108fa94244896e77f92dc761e38f8e39/invoke.js"></script>
+                  </li>
+                    </ul>
+                  </div>
                 <script>
                     function googleTranslateElementInit() {
                         new google.translate.TranslateElement({pageLanguage: 'en', autoDisplay: false}, 'google_translate_element');
@@ -178,17 +258,11 @@ transform: scale(1.05); /* Slight zoom effect */
                 <a href="picsh.html"> <button>HENTAI📸PICS</button> </a>
               </P>
            
-            <P>
-              <a href="picsg.html"> <button>GAY📸PICS</button> </a>
-            </P>
-
-            
-        
-            
+           <p>
            
              
 <a href="apps.html"><button>APP</button></a>
         </center>
-
+</p>
     </body>
 </html>
