@@ -71,28 +71,29 @@ to<!DOCTYPE html>
 table {
   border-collapse: collapse;
   width: 100%;
-  min-width: 320px; /* Make sure it's wide enough to fit all 3 cells */
+  table-layout: fixed;
 }
 
 td {
   border: 1px solid yellow;
   padding: 10px;
   text-align: center;
-  vertical-align: top;
+  color: yellow;
 }
 
-/* Mobile screen handling (below 768px) */
+/* Responsive: allow horizontal scroll on small screens */
 @media screen and (max-width: 768px) {
-  .table-wrapper {
-    overflow-x: auto;
+  table {
     display: block;
-    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
   }
 
-  table {
-    min-width: 720px; /* Minimum width to fit all 3 columns */
+  tr {
+    display: table;
+    width: 720px; /* minimum to fit 3 cells comfortably */
+    table-layout: fixed;
   }
-}
 }
 img {
     width: 85%; /* Adjust the percentage as needed */
