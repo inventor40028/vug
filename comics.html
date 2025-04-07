@@ -1,4 +1,4 @@
-to<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
@@ -80,10 +80,24 @@ td {
   text-align: center;
   vertical-align: top;
 }
+tbody {
+  overflow-x: auto;
+  width: 100%;
+}
+
+tbody table {
+  min-width: 960px; /* 320px x 3 */
+  border-collapse: collapse;
+}
+
+tbody td {
+  border: 1px solid yellow;
+  padding: 10px;
+}
 
 /* Mobile screen handling (below 768px) */
 @media screen and (max-width: 768px) {
-  .table-wrapper {
+tbody {
     overflow-x: auto;
     display: block;
     width: 100%;
@@ -865,10 +879,7 @@ container.addEventListener("touchend", () => {
       <span style="color: #ffd966;"><span><br /></span>
     </span></div>
     <br />
-  </center>
-</center>
-
-
+  
 </center>
 
 
